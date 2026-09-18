@@ -1,69 +1,121 @@
-# React + TypeScript + Vite
+# 🥗 Contador de Calorías
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web para llevar un registro sencillo de las **calorías consumidas y quemadas durante el día**.
 
-Currently, two official plugins are available:
+El proyecto permite registrar alimentos y actividades físicas, visualizar el balance calórico y administrar los registros de manera sencilla desde una interfaz web.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Fue desarrollado como proyecto práctico para reforzar conocimientos de **React, TypeScript y manejo de estado en aplicaciones frontend**.
 
-## Expanding the ESLint configuration
+## ✨ Características
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* 🍎 Registro de alimentos y calorías consumidas.
+* 🏃 Registro de actividades y calorías quemadas.
+* 📊 Visualización del balance de calorías.
+* ✏️ Edición de registros existentes.
+* 🗑️ Eliminación de registros.
+* 🔄 Reinicio de los registros para comenzar un nuevo seguimiento.
+* 🆔 Identificación única de los registros.
+* 📱 Interfaz adaptable a diferentes tamaños de pantalla.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tecnologías
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+* **React 19**
+* **TypeScript**
+* **Vite**
+* **Tailwind CSS**
+* **Heroicons**
+* **UUID**
+* **ESLint**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+El proyecto utiliza Vite como herramienta de desarrollo y compilación, React para la construcción de la interfaz y TypeScript para agregar tipado estático al código.
+
+## 📚 Conceptos practicados
+
+Durante el desarrollo se trabajaron diferentes conceptos fundamentales del desarrollo frontend moderno:
+
+* Componentes reutilizables de React.
+* Props.
+* Estado y actualización de la interfaz.
+* Manejo de formularios.
+* Renderizado dinámico de listas.
+* Tipado de componentes y datos con TypeScript.
+* Organización de la lógica de la aplicación.
+* Generación de identificadores únicos.
+* Diseño de interfaces utilizando Tailwind CSS.
+* Configuración y desarrollo de aplicaciones con Vite.
+
+## 🚀 Instalación
+
+Clona el repositorio:
+
+```bash
+git clone https://github.com/Nandog20/Contador-calorias.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Entra al proyecto:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd Contador-calorias
 ```
+
+Instala las dependencias:
+
+```bash
+npm install
+```
+
+Inicia el servidor de desarrollo:
+
+```bash
+npm run dev
+```
+
+La aplicación estará disponible en la dirección indicada por Vite.
+
+## 📦 Scripts disponibles
+
+### Desarrollo
+
+```bash
+npm run dev
+```
+
+Inicia el servidor de desarrollo de Vite.
+
+### Build
+
+```bash
+npm run build
+```
+
+Genera la versión optimizada para producción.
+
+### Lint
+
+```bash
+npm run lint
+```
+
+Ejecuta ESLint para revisar posibles problemas en el código.
+
+### Preview
+
+```bash
+npm run preview
+```
+
+Permite visualizar localmente la versión compilada de la aplicación.
+
+## 🎯 Objetivo del proyecto
+
+El objetivo principal de este proyecto fue desarrollar una aplicación frontend funcional mientras se practicaban conceptos de **React y TypeScript**, especialmente la creación de componentes, manejo de datos y construcción de interfaces dinámicas.
+
+Además, el proyecto forma parte de mi proceso de aprendizaje y construcción de experiencia práctica en el desarrollo web frontend.
+
+## 👨‍💻 Autor
+
+**Nandog20**
+
+Desarrollador enfocado en el desarrollo web frontend.
+
+* GitHub: https://github.com/Nandog20
